@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Contact information and a contact form which the user can submit to ask questions about the company and its services">
+    <meta name="author" content="Eliana Baldo">
+    <title>Contact Us | White Water Rafting</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth@75..100&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+  </head>
+  <body>
+    <header>
+        <img src="images/rafting.png" alt="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+    <main>
+        <section class="company-info">
+            <div class="contact-info">
+                <h1>Company information</h1>
+                <p>Have questions? Get a hold of us! We are available at all hours of the day!</p>
+                <p id="phone">1(406) 848-9982</p>
+                <p>129 US Hwy 89 S, Gardiner, MT 59030</p>
+                <p><a href="WHITEWATERAFTING@GMAIL.COM">WHITEWATERAFTING@GMAIL.COM</a></p>
+            </div>
+            <div class="map">
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9212.984737551695!2d-110.73077156435573!3d45.039200838191334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534fd0cf138f9cb9%3A0x6a8cf24421c8ae61!2s129%20US%20Hwy%2089%20S%2C%20Gardiner%2C%20MT%2059030%2C%20USA!5e0!3m2!1sen!2ses!4v1733570274763!5m2!1sen!2ses" width="650"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="employee">
+            <h2>Employee Profile</h2>
+            <figure>
+                <img src="images/founder.jpg" alt="Cetina River Tour">
+                <figcaption>Founder</figcaption>
+            </figure>
+            <figure>
+                <img src="images/director.jpg" alt="Rafting in Albania">
+                <figcaption>Managing Director</figcaption>
+            </figure>
+            <figure>
+                <img src="images/administrator.jpg" alt="Altanya Canyon Rafting">
+                <figcaption>Administrator</figcaption>
+            </figure>
+        </section>
+
+        <section id="feedback">
+        <h2>Contact Us</h2>
+        <form action="/my-handling-form-page" method="post">
+            <fieldset>
+                <label id="user-name" for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+            </fieldset>
+            <fieldset>
+                <label id="email" for="mail">Email:</label>
+                <input type="email" id="mail" name="user_email">
+            </fieldset>
+            <fieldset>
+                <legend>Purpose of message</legend>
+                    <label id="msg-inquiry" for="inquiry">
+                    <input type="radio" id="inquiry" name="purpose" value="inquiry">General Inquiry</label>
+                    <label id="msg-reservation" for="reservation">
+                    <input type="radio" id="reservation" name="purpose" value="reservation">Reservation Question</label>
+                    <label id="msg-suggestion" for="suggestion">
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">Website Suggestion</label>
+            </fieldset>
+            <fieldset>
+                <label id="message" for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </fieldset>
+            <fieldset>
+                <label id="msg-newsletter" for="newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">Please subscribe me to the monthly newsletter</label>
+             </fieldset>
+                <button type="submit">Send</button></form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2024 White Water Rafting - Eliana Baldo | <a href="https://app.moqups.com/rThbE1appzaPVchAMnK0PeGPyIvCv8YZ/view/page/ad64222d5" target="_blank">Wireframe</a></p>
+        <div>
+            <a href="https://facebook.com">
+            <img src="images/facebook.svg" alt="Facebook">       
+            </a>
+            <a href="https://twitter.com">        
+            <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+            <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+  </body>
+</html>
